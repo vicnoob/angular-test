@@ -15,6 +15,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule, MatTableModule} from '@angular/material';
+import { PostsComponent } from './posts/posts.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +29,19 @@ import { HomeComponent } from './home/home.component';
     DashboardComponent,
     HeroSearchComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    PostsComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatTableModule
     // HttpClientInMemoryWebApiModule.forRoot(
     //   InMemoryDataService, { dataEncapsulation: false }
     // ),

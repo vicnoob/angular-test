@@ -1,0 +1,8 @@
+table {
+  width: 100%;
+}
+
+.post-row:hover {
+  background-color: rgba(182, 207, 207, 0.479);
+  cursor: pointer;
+}
