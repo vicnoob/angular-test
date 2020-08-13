@@ -11,7 +11,7 @@ export class PostsService {
 
   constructor(private http: HttpClient) { }
 
-  private postsUrl = 'https://jsonplaceholder.typicode.com/posts/';
+  private postsUrl = 'http://expresstest-env.eba-axsumn2y.ap-southeast-1.elasticbeanstalk.com/url';
 
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.postsUrl)
